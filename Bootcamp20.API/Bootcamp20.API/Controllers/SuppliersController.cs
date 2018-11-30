@@ -1,6 +1,6 @@
 ﻿using Bootcamp20.API.BussinessLogic.Interface;
 using Bootcamp20.API.DataAccess.Models;
-using Bootcamp20.DataAccess.Models;
+//using Bootcamp20.DataAccess.Models;
 using Bootcamp20.DataAccess.Param;
 using System;
 using System.Collections.Generic;
@@ -36,6 +36,12 @@ namespace Bootcamp20.API.Controllers
         public Supplier Get(int id)
         {
             return _supplierService.Get(id);
+        }
+
+        [HttpGet]
+        public List<Supplier> GetName(string name)
+        {
+            return _supplierService.GetName(name);
         }
 
         // POST: api/Suppliers

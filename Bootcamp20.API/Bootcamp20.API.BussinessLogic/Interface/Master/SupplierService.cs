@@ -33,6 +33,11 @@ namespace Bootcamp20.API.BussinessLogic.Interface.Master
             return _supplierRepository.Get(id);
         }
 
+        public List<Supplier> GetName(string name)
+        {
+            return _supplierRepository.GetName(name);
+        }
+
         public bool Insert(SupplierParam supplierParam)
         {
             return _supplierRepository.Insert(supplierParam);

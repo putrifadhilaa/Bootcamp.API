@@ -47,6 +47,11 @@ namespace Bootcamp20.API.Common.Interface.Master
             return supplier;
         }
 
+        public List<Supplier> GetName(string name)
+        {
+            return context.Suppliers.Where(x => x.Name.Contains(name) && x.IsDelete == false).ToList();
+        }
+
         public bool Insert(SupplierParam supplierParam)
         {
             var push = new Supplier(supplierParam);

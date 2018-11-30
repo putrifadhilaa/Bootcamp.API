@@ -21,6 +21,25 @@ function LoadIndexSupplier() {
     });
 }
 
+function LoadIndexSearch() {
+    $.ajax({
+        type: "GETNAME",
+        url: "",
+        dataType: "json",
+        success: function (data) {
+            var html = '';
+            $.each(data, function (index, val) {
+                html += '<tr>';
+                html += '<td>' + val.Name + '</td>';
+                html += '<td> <a href="#" onclick="return GetById(' + val.Id + ')">Edit</a>';
+                html += '| <a href="#" onclick="return Delete(' + val.Id + ')">Delete</a> </td>';
+                html += '</tr>';
+            });
+            $('.tbody').html(html);
+        }
+    });
+}
+
 function Edit() {
     var supplier = new Object();
     supplier.id = $('#Id').val();
