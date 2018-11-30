@@ -1,11 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="Bootcamp20.APIModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'Bootcamp20.API.dbo.Item' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="Item">
     <Key>
       <PropertyRef Name="Id" />
-      <PropertyRef Name="IsDelete" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="varchar" MaxLength="50" />
@@ -41,20 +38,8 @@ warning 6002: The table/view 'Bootcamp20.API.dbo.Item' does not have a primary k
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="Bootcamp20APIModelStoreContainer">
+    <EntitySet Name="Item" EntityType="Self.Item" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Supplier" EntityType="Self.Supplier" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="Item" EntityType="Self.Item" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-    [Item].[Id] AS [Id], 
-    [Item].[Name] AS [Name], 
-    [Item].[Supplier_id] AS [Supplier_id], 
-    [Item].[Stock] AS [Stock], 
-    [Item].[Price] AS [Price], 
-    [Item].[CreateDate] AS [CreateDate], 
-    [Item].[UpdateDate] AS [UpdateDate], 
-    [Item].[DeleteDate] AS [DeleteDate], 
-    [Item].[IsDelete] AS [IsDelete]
-    FROM [dbo].[Item] AS [Item]</DefiningQuery>
-    </EntitySet>
     <AssociationSet Name="FK_Item_Supplier" Association="Self.FK_Item_Supplier">
       <End Role="Supplier" EntitySet="Supplier" />
       <End Role="Item" EntitySet="Item" />

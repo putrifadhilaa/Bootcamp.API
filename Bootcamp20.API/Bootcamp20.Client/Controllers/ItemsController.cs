@@ -19,5 +19,19 @@ namespace Bootcamp20.Client.Controllers
         {
             return View();
         }
+
+        //get edit
+        public ActionResult Edit(int? id)
+        {
+            return View();
+        }
+
+        //post edit
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit()
+        {
+            return View();
+        }
     }
 }

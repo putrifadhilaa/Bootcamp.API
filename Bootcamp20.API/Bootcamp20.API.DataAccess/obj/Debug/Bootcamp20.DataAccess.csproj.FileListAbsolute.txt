@@ -17,4 +17,3 @@ C:\Users\Fadhila Putri\Documents\github\Bootcamp.API\Bootcamp20.API\Bootcamp20.A
 C:\Users\Fadhila Putri\Documents\github\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Fadhila Putri\Documents\github\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.DataAccess\obj\Debug\Bootcamp20.API.DataAccess.exe
 C:\Users\Fadhila Putri\Documents\github\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.DataAccess\obj\Debug\Bootcamp20.API.DataAccess.pdb
-C:\Users\Fadhila Putri\Documents\github\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.DataAccess\obj\Debug\Bootcamp20.DataAccess.csprojResolveAssemblyReference.cache
