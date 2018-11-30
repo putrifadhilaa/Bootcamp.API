@@ -44,9 +44,11 @@ namespace Bootcamp20.API.Common.Interface.Master
             }
             return item;
         }
-
+        
         public bool Insert(ItemParam itemParam)
         {
+            Item item = context.Items.SingleOrDefault(x => x.Id == itemParam.Id && x.IsDelete == false);
+            item.Supplier = context.Suppliers.Find(Convert.ToInt16(itemParam.Supplier));
             var push = new Item(itemParam);
             context.Items.Add(push);
             var result = context.SaveChanges();
