@@ -14,5 +14,6 @@ namespace Bootcamp20.DataAccess.Param
         public int Stock { get; set; }
         public int Price { get; set; }
         public string Supplier { get; set; }
+        public bool IsDelete { get; set; }
     }
 }

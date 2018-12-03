@@ -1,17 +1,20 @@
 ﻿$(document).ready(function () {
-    LoadIndexSupplier();
+    LoadIndexItem();
 })
 
-function LoadIndexSupplier() {
+function LoadIndexItem() {
     $.ajax({
         type: "GET",
-        url: 'http://localhost:22980/api/suppliers/',
+        url: 'http://localhost:22980/api/items/',
         dateType: "json",
         success: function (data) {
             var html = '';
             $.each(data, function (index, val) {
                 html += '<tr>';
                 html += '<td>' + val.Name + '<td>';
+                html += '<td>' + val.Price + '<td>';
+                html += '<td>' + val.Stock + '<td>';
+                html += '<td>' + val.Supplier + '<td>';
                 html += '<td> <a href="#" onclick="return GetById(' + val.Id + ')">Edit</a>';
                 html += '| <a href="#" onclick="return Delete(' + val.Id + ')">Delete</a> </td>';
                 html += '</tr>';
@@ -22,17 +25,18 @@ function LoadIndexSupplier() {
 }
 
 function LoadIndexSearch() {
-    debugger;
-    var supplier = new Object($('#search').val());
     $.ajax({
-        type: "GET",
-        url: "http://localhost:22980/api/suppliers/?name=" + supplier,
+        type: "GETNAME",
+        url: "http://localhost:22980/api/items/",
         dataType: "json",
         success: function (data) {
             var html = '';
             $.each(data, function (index, val) {
                 html += '<tr>';
                 html += '<td>' + val.Name + '</td>';
+                html += '<td>' + val.Price + '<td>';
+                html += '<td>' + val.Stock + '<td>';
+                html += '<td>' + val.Supplier + '<td>';
                 html += '<td> <a href="#" onclick="return GetById(' + val.Id + ')">Edit</a>';
                 html += '| <a href="#" onclick="return Delete(' + val.Id + ')">Delete</a> </td>';
                 html += '</tr>';
@@ -43,30 +47,39 @@ function LoadIndexSearch() {
 }
 
 function Edit() {
-    var supplier = new Object();
-    supplier.id = $('#Id').val();
-    supplier.name = $('#Name').val();
+    var item = new Object();
+    item.id = $('#Id').val();
+    item.name = $('#Name').val();
+    item.price = $('#Price').val();
+    item.stock = $('#Stock').val();
+    item.supplier = $('#Supplier').val();
     $.ajax({
-        url: "http://localhost:22980/api/suppliers/" + $('#Id').val(),
-        data: supplier,
+        url: "http://localhost:22980/api/items/" + $('#Id').val(),
+        data: item,
         type: "PUT",
         dataType: "json",
         success: function (result) {
-            LoadIndexSupplier();
+            LoadIndexItem();
             $('#myModal').modal('hide');
             $('#Name').val('');
+            $('#Price').val('');
+            $('#Stock').val('');
+            $('#Supplier').val('');
         }
     });
 };
 
 function GetById(Id) {
     $.ajax({
-        url: "http://localhost:22980/api/suppliers/" + Id,
+        url: "http://localhost:22980/api/items/" + Id,
         type: "GET",
         dataType: "json",
         success: function (result) {
             $('#Id').val(result.Id);
             $('#Name').val(result.Name);
+            $('#Price').val(result.Price);
+            $('#Stock').val(result.Stock);
+            $('#Supplier').val(result.Supplier);
             $('#myModal').modal('show');
             $('#Update').show();
             $('#Save').hide();
@@ -75,15 +88,18 @@ function GetById(Id) {
 }
 
 function Save() {
-    var supplier = new Object();
-    supplier.name = $('#Name').val();
+    var item = new Object();
+    item.name = $('#Name').val();
+    item.price = $('#Price').val();
+    item.stock = $('#Stock').val();
+    item.supplier = $('#Supplier').val();
     $.ajax({
-        url: 'http://localhost:22980/api/suppliers/',
+        url: 'http://localhost:22980/api/items/',
         type: 'POST',
         dataType: 'json',
-        data: supplier,
+        data: item,
         success: function (result) {
-            LoadIndexSupplier();
+            LoadIndexItem();
             $('#myModal').modal('hide');
         }
     });
@@ -100,7 +116,7 @@ function Delete(Id) {
         closeOnConfirm: false
     }, function () {
         $.ajax({
-            url: "http://localhost:22980/api/suppliers/" + Id,
+            url: "http://localhost:22980/api/items/" + Id,
             type: "DELETE",
             success: function (response) {
                 swal({
@@ -109,7 +125,7 @@ function Delete(Id) {
                     type: "success"
                 },
                 function () {
-                    window.location.href = '/Suppliers/Index/';
+                    window.location.href = '/Items/Index/';
                 });
             },
             error: function (response) {

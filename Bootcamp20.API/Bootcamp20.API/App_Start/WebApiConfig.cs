@@ -20,6 +20,12 @@ namespace Bootcamp20.API
                 defaults: new { id = RouteParameter.Optional }
 
             );
+
+            config.Routes.MapHttpRoute(
+                name: "ApiByName",
+                routeTemplate: "api/(controller)/(action)/(name)",
+                defaults: null,
+                constraints: new { name = @"^[a-z]+$" });
         }
     }
 }

@@ -39,7 +39,7 @@ namespace Bootcamp20.API.Controllers
         }
 
         [HttpGet]
-        public List<Supplier> GetName(string name)
+        public IEnumerable<Supplier> GetName(string name)
         {
             return _supplierService.GetName(name);
         }

@@ -1,4 +1,5 @@
 ﻿using Bootcamp20.API.BussinessLogic.Interface;
+using Bootcamp20.API.BussinessLogic.Interface.Master;
 using Bootcamp20.API.DataAccess.Models;
 using Bootcamp20.DataAccess.Param;
 using System;
@@ -15,10 +16,12 @@ namespace Bootcamp20.API.Controllers
     public class ItemsController : ApiController
     {
         private readonly IItemService _itemService;
+        ISupplierService _Supplier = new SupplierService();
         public ItemsController() { }
-        public ItemsController(IItemService itemService)
+        public ItemsController(IItemService itemService, ISupplierService supplier)
         {
             this._itemService = itemService;
+            this._Supplier = supplier;
         }
 
 
