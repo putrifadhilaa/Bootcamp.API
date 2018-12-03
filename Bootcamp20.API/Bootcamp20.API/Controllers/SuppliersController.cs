@@ -38,6 +38,12 @@ namespace Bootcamp20.API.Controllers
             return _supplierService.Get(id);
         }
 
+        [HttpGet]
+        public List<Supplier> GetName(string name)
+        {
+            return _supplierService.GetName(name);
+        }
+
         // POST: api/Suppliers
         [HttpPost]
         public void Post(SupplierParam supplierParam)

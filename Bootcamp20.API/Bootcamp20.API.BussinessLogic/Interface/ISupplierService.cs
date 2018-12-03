@@ -13,6 +13,7 @@ namespace Bootcamp20.API.BussinessLogic.Interface
     {
         List<Supplier> Get();
         Supplier Get(int? id);
+        List<Supplier> GetName(string name);
         bool Insert(SupplierParam supplierParam);
         bool Update(SupplierParam supplierParam);
         bool Delete(int? id);
