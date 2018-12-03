@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Bootcamp20.API.DataAccess.Models;
-using Bootcamp20.API.DataAccess.Param;
 using Bootcamp20.API.Common.Interface.Master;
+using Bootcamp20.DataAccess.Param;
 
 namespace Bootcamp20.API.BussinessLogic.Interface.Master
 {
@@ -36,10 +36,12 @@ namespace Bootcamp20.API.BussinessLogic.Interface.Master
         {
             return _itemRepository.Insert(itemParam);
         }
+        
 
         public bool Update(ItemParam itemParam)
         {
             return _itemRepository.Update(itemParam);
         }
+        
     }
 }

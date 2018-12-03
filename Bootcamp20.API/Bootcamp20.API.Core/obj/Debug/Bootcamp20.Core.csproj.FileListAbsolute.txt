@@ -5,6 +5,5 @@ C:\Users\Fadhila Putri\Documents\github\Bootcamp.API\Bootcamp20.API\Bootcamp20.A
 C:\Users\Fadhila Putri\Documents\github\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.Core\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Fadhila Putri\Documents\github\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.Core\bin\Debug\EntityFramework.xml
 C:\Users\Fadhila Putri\Documents\github\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.Core\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Fadhila Putri\Documents\github\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.Core\obj\Debug\Bootcamp20.Core.csprojResolveAssemblyReference.cache
 C:\Users\Fadhila Putri\Documents\github\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.Core\obj\Debug\Bootcamp20.API.Core.exe
 C:\Users\Fadhila Putri\Documents\github\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.Core\obj\Debug\Bootcamp20.API.Core.pdb

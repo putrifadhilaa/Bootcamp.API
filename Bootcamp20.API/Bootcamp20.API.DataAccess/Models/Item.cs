@@ -9,9 +9,9 @@
 
 namespace Bootcamp20.API.DataAccess.Models
 {
-    using Param;
     using System;
     using System.Collections.Generic;
+    using Bootcamp20.DataAccess.Param;
 
     public partial class Item
     {
@@ -27,15 +27,16 @@ namespace Bootcamp20.API.DataAccess.Models
     
         public virtual Supplier Supplier { get; set; }
 
-        public Item() { }
-        public Item(ItemParam itemParam)
+        public Item () { }
+        public Item (ItemParam itemParam)
         {
             this.Name = itemParam.Name;
             this.Stock = itemParam.Stock;
             this.Price = itemParam.Price;
             this.CreateDate = DateTimeOffset.Now.LocalDateTime;
         }
-        public virtual void Update(ItemParam itemParam)
+
+        public virtual void Update (ItemParam itemParam)
         {
             this.Id = itemParam.Id;
             this.Name = itemParam.Name;
@@ -43,7 +44,8 @@ namespace Bootcamp20.API.DataAccess.Models
             this.Price = itemParam.Price;
             this.UpdateDate = DateTimeOffset.Now.LocalDateTime;
         }
-        public virtual void Delete()
+
+        public virtual void Delete ()
         {
             this.IsDelete = true;
             this.DeleteDate = DateTimeOffset.Now.LocalDateTime;

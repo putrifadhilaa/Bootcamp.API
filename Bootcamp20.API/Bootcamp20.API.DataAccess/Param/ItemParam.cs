@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bootcamp20.API.DataAccess.Param
+namespace Bootcamp20.DataAccess.Param
 {
     public class ItemParam
     {

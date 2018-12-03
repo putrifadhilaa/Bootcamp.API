@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Bootcamp20.API.DataAccess.Models;
-using Bootcamp20.API.DataAccess.Param;
 using System.Data.Entity;
 using Bootcamp20.DataAccess.Param;
 

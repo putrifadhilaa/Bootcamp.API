@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Bootcamp20.API.DataAccess.Models;
-using Bootcamp20.API.DataAccess.Param;
 using System.Data.Entity;
+using Bootcamp20.DataAccess.Param;
 
 namespace Bootcamp20.API.Common.Interface.Master
 {
@@ -16,7 +16,7 @@ namespace Bootcamp20.API.Common.Interface.Master
         public bool Delete(int? id)
         {
             var getitem = Get(id);
-            getitem.Delete();
+            getitem.IsDelete=true;
             context.Entry(getitem).State = EntityState.Modified;
             var result = context.SaveChanges();
             if(result > 0)
@@ -52,32 +52,33 @@ namespace Bootcamp20.API.Common.Interface.Master
             }
             return item;
         }
-        
+
         public bool Insert(ItemParam itemParam)
         {
-           
             Item item = new Item(itemParam);
             item.Supplier = context.Suppliers.Find(Convert.ToInt16(itemParam.Supplier));
             context.Items.Add(item);
             var result = context.SaveChanges();
-            if(result > 0)
+            if (result > 0)
             {
                 status = true;
             }
             return status;
         }
+        
 
         public bool Update(ItemParam itemParam)
         {
-            var getitem = Get(itemParam.Id);
+            Item getitem = Get(itemParam.Id);
             getitem.Update(itemParam);
             context.Entry(getitem).State = EntityState.Modified;
             var result = context.SaveChanges();
-            if(result > 0)
+            if (result > 0)
             {
                 status = true;
             }
             return status;
         }
+        
     }
 }
