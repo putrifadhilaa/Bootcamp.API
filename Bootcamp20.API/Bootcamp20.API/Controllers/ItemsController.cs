@@ -7,9 +7,11 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace Bootcamp20.API.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class ItemsController : ApiController
     {
         private readonly IItemService _itemService;

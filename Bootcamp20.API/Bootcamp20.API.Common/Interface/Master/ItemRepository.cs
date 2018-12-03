@@ -28,15 +28,7 @@ namespace Bootcamp20.API.Common.Interface.Master
 
         public List<Item> Get()
         {
-            try
-            {
-                return context.Items.ToList();
-            }
-            catch (Exception ex)
-            {
-                Console.Write(ex.InnerException);
-            }
-            return context.Items.ToList();
+            return context.Items.Where(x => x.IsDelete == false).ToList();
         }
 
         public Item Get(int? id)
@@ -55,9 +47,8 @@ namespace Bootcamp20.API.Common.Interface.Master
 
         public bool Insert(ItemParam itemParam)
         {
-            Item item = new Item(itemParam);
-            item.Supplier = context.Suppliers.Find(Convert.ToInt16(itemParam.Supplier));
-            context.Items.Add(item);
+            var push = new Item(itemParam);
+            context.Items.Add(push);
             var result = context.SaveChanges();
             if (result > 0)
             {
