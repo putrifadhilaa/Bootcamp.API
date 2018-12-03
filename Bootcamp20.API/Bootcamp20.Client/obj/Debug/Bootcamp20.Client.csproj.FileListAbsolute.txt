@@ -77,3 +77,4 @@ C:\Users\Fadhila Putri\Documents\github\Bootcamp.API\Bootcamp20.API\Bootcamp20.C
 C:\Users\Fadhila Putri\Documents\github\Bootcamp.API\Bootcamp20.API\Bootcamp20.Client\bin\Newtonsoft.Json.xml
 C:\Users\Fadhila Putri\Documents\github\Bootcamp.API\Bootcamp20.API\Bootcamp20.Client\obj\Debug\Bootcamp20.Client.dll
 C:\Users\Fadhila Putri\Documents\github\Bootcamp.API\Bootcamp20.API\Bootcamp20.Client\obj\Debug\Bootcamp20.Client.pdb
+C:\Users\Fadhila Putri\Documents\github\Bootcamp.API\Bootcamp20.API\Bootcamp20.Client\obj\Debug\Bootcamp20.Client.csprojResolveAssemblyReference.cache
