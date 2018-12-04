@@ -1,17 +1,21 @@
 ﻿$(document).ready(function () {
+    $('#datatables').DataTable({
+        "ajax":LoadIndexSupplier()
+    });
     LoadIndexSupplier();
-})
+});
 
 function LoadIndexSupplier() {
     $.ajax({
         type: "GET",
         url: 'http://localhost:22980/api/suppliers/',
+		async: false,
         dateType: "json",
         success: function (data) {
             var html = '';
             $.each(data, function (index, val) {
                 html += '<tr>';
-                html += '<td>' + val.Name + '<td>';
+                html += '<td>' + val.Name + '</td>';
                 html += '<td> <a href="#" onclick="return GetById(' + val.Id + ')">Edit</a>';
                 html += '| <a href="#" onclick="return Delete(' + val.Id + ')">Delete</a> </td>';
                 html += '</tr>';

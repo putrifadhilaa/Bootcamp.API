@@ -1,6 +1,9 @@
 ﻿$(document).ready(function () {
+    $('#datatables').DataTable({
+        "ajax":LoadIndexItem()
+    });
     LoadIndexItem();
-})
+});
 
 function LoadIndexItem() {
 	var item = new Object($('#search').val());
@@ -29,6 +32,7 @@ function LoadIndexSearch() {
     $.ajax({
         type: "GETNAME",
         url: "http://localhost:22980/api/items/",
+		async: false,
         dataType: "json",
         success: function (data) {
             var html = '';
