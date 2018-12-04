@@ -11,6 +11,7 @@ namespace Bootcamp20.API.BussinessLogic.Interface
     public interface IItemService
     {
         List<Item> Get();
+        List<Item> GetName(string name);
         Item Get(int? id);
         bool Insert(ItemParam itemParam);
         bool Update(ItemParam itemParam);

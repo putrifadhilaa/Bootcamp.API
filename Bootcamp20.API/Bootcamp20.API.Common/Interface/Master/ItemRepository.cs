@@ -30,7 +30,7 @@ namespace Bootcamp20.API.Common.Interface.Master
         {
             return context.Items.Where(x => x.IsDelete == false).ToList();
         }
-
+        
         public Item Get(int? id)
         {
             if(id == null)
@@ -70,6 +70,10 @@ namespace Bootcamp20.API.Common.Interface.Master
             }
             return status;
         }
-        
+
+        public List<Item> GetName(string name)
+        {
+            return context.Items.Where(x => x.Name.Contains(name) && x.IsDelete == false).ToList();
+        }
     }
 }

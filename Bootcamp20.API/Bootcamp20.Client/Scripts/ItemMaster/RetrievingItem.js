@@ -1,15 +1,25 @@
 ﻿$(document).ready(function () {
+<<<<<<< HEAD
     $('#datatables').DataTables({
         "ajax": LoadIndexItem()
+=======
+    $('#datatables').DataTable({
+        "ajax":LoadIndexItem()
+>>>>>>> feee5ec2ad927d1ebe657db19a4ce771a7577cfe
     });
     LoadIndexItem();
 });
 
 function LoadIndexItem() {
+	var item = new Object($('#search').val());
     $.ajax({
         type: "GET",
+<<<<<<< HEAD
         url: 'http://localhost:22980/api/items/',
         async: false,
+=======
+        url: 'http://localhost:22980/api/items/?name=' + item,
+>>>>>>> feee5ec2ad927d1ebe657db19a4ce771a7577cfe
         dateType: "json",
         success: function (data) {
             var html = '';
@@ -32,6 +42,7 @@ function LoadIndexSearch() {
     $.ajax({
         type: "GETNAME",
         url: "http://localhost:22980/api/items/",
+		async: false,
         dataType: "json",
         success: function (data) {
             var html = '';

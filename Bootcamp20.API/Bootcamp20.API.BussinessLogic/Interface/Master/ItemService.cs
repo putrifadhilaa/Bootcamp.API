@@ -27,6 +27,11 @@ namespace Bootcamp20.API.BussinessLogic.Interface.Master
             return _itemRepository.Get();
         }
 
+        public List<Item> GetName(string name)
+        {
+            return _itemRepository.GetName(name);
+        }
+
         public Item Get(int? id)
         {
             return _itemRepository.Get(id);

@@ -1,6 +1,11 @@
 ﻿$(document).ready(function () {
+<<<<<<< HEAD
     $('#datatables').DataTables({
         "ajax": LoadIndexSupplier()
+=======
+    $('#datatables').DataTable({
+        "ajax":LoadIndexSupplier()
+>>>>>>> feee5ec2ad927d1ebe657db19a4ce771a7577cfe
     });
     LoadIndexSupplier();
 });
@@ -9,7 +14,11 @@ function LoadIndexSupplier() {
     $.ajax({
         type: "GET",
         url: 'http://localhost:22980/api/suppliers/',
+<<<<<<< HEAD
         async: false,
+=======
+		async: false,
+>>>>>>> feee5ec2ad927d1ebe657db19a4ce771a7577cfe
         dateType: "json",
         success: function (data) {
             var html = '';
