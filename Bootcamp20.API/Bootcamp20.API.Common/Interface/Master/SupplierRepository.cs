@@ -29,7 +29,8 @@ namespace Bootcamp20.API.Common.Interface.Master
 
         public List<Supplier> Get()
         {
-            return context.Suppliers.Where(x => x.IsDelete == false).ToList();
+            var kc= context.Suppliers.Where(x => x.IsDelete == false).ToList();
+            return kc;
         }
 
         public Supplier Get(int? id)

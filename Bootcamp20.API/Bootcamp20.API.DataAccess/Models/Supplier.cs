@@ -30,6 +30,7 @@ namespace Bootcamp20.API.DataAccess.Models
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Item> Items { get; set; }
+        
         public Supplier(SupplierParam supplierParam)
         {
             this.Name = supplierParam.Name;

@@ -28,7 +28,8 @@ namespace Bootcamp20.API.Controllers
         [HttpGet]
         public IEnumerable<Supplier> Get()
         {
-            return _supplierService.Get();
+            var kc = _supplierService.Get();
+            return kc;
         }
 
         // GET: api/Suppliers/5
