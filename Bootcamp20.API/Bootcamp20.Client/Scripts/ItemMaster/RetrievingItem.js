@@ -3,9 +3,10 @@
 })
 
 function LoadIndexItem() {
+	var item = new Object($('#search').val());
     $.ajax({
         type: "GET",
-        url: 'http://localhost:22980/api/items/',
+        url: 'http://localhost:22980/api/items/?name=' + item,
         dateType: "json",
         success: function (data) {
             var html = '';

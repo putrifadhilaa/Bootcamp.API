@@ -18,3 +18,13 @@ C:\Users\Fadhila Putri\Documents\github\Bootcamp.API\Bootcamp20.API\Bootcamp20.A
 C:\Users\Fadhila Putri\Documents\github\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.DataAccess\obj\Debug\Bootcamp20.DataAccess.csprojResolveAssemblyReference.cache
 C:\Users\Fadhila Putri\Documents\github\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.DataAccess\obj\Debug\Bootcamp20.API.DataAccess.exe
 C:\Users\Fadhila Putri\Documents\github\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.DataAccess\obj\Debug\Bootcamp20.API.DataAccess.pdb
+C:\Users\Jehan Pahlevi\Documents\git\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.DataAccess\bin\Debug\Bootcamp20.API.DataAccess.exe.config
+C:\Users\Jehan Pahlevi\Documents\git\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.DataAccess\bin\Debug\Bootcamp20.API.DataAccess.exe
+C:\Users\Jehan Pahlevi\Documents\git\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.DataAccess\bin\Debug\Bootcamp20.API.DataAccess.pdb
+C:\Users\Jehan Pahlevi\Documents\git\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\Jehan Pahlevi\Documents\git\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jehan Pahlevi\Documents\git\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\Jehan Pahlevi\Documents\git\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jehan Pahlevi\Documents\git\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.DataAccess\obj\Debug\Bootcamp20.DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\Jehan Pahlevi\Documents\git\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.DataAccess\obj\Debug\Bootcamp20.API.DataAccess.exe
+C:\Users\Jehan Pahlevi\Documents\git\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.DataAccess\obj\Debug\Bootcamp20.API.DataAccess.pdb

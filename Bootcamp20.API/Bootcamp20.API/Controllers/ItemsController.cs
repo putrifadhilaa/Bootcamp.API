@@ -39,6 +39,12 @@ namespace Bootcamp20.API.Controllers
             return _itemService.Get(id);
         }
 
+        [HttpGet]
+        public IEnumerable<Item> GetName(string name)
+        {
+            return _itemService.GetName(name);
+        }
+
         // POST: api/Items
         [HttpPost]
         public void Post(ItemParam itemParam)

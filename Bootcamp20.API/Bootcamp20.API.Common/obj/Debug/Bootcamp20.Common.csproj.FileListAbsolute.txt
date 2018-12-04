@@ -22,3 +22,15 @@ C:\Users\Fadhila Putri\Documents\github\Bootcamp.API\Bootcamp20.API\Bootcamp20.A
 C:\Users\Fadhila Putri\Documents\github\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.Common\obj\Debug\Bootcamp20.Common.csprojResolveAssemblyReference.cache
 C:\Users\Fadhila Putri\Documents\github\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.Common\obj\Debug\Bootcamp20.API.Common.exe
 C:\Users\Fadhila Putri\Documents\github\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.Common\obj\Debug\Bootcamp20.API.Common.pdb
+C:\Users\Jehan Pahlevi\Documents\git\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.Common\bin\Debug\Bootcamp20.API.Common.exe.config
+C:\Users\Jehan Pahlevi\Documents\git\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.Common\bin\Debug\Bootcamp20.API.Common.exe
+C:\Users\Jehan Pahlevi\Documents\git\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.Common\bin\Debug\Bootcamp20.API.Common.pdb
+C:\Users\Jehan Pahlevi\Documents\git\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.Common\bin\Debug\Bootcamp20.API.DataAccess.exe
+C:\Users\Jehan Pahlevi\Documents\git\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.Common\bin\Debug\EntityFramework.dll
+C:\Users\Jehan Pahlevi\Documents\git\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.Common\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jehan Pahlevi\Documents\git\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.Common\bin\Debug\Bootcamp20.API.DataAccess.pdb
+C:\Users\Jehan Pahlevi\Documents\git\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.Common\bin\Debug\EntityFramework.xml
+C:\Users\Jehan Pahlevi\Documents\git\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.Common\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jehan Pahlevi\Documents\git\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.Common\obj\Debug\Bootcamp20.Common.csprojResolveAssemblyReference.cache
+C:\Users\Jehan Pahlevi\Documents\git\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.Common\obj\Debug\Bootcamp20.API.Common.exe
+C:\Users\Jehan Pahlevi\Documents\git\Bootcamp.API\Bootcamp20.API\Bootcamp20.API.Common\obj\Debug\Bootcamp20.API.Common.pdb
